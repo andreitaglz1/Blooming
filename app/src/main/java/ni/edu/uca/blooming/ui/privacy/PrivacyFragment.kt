@@ -9,23 +9,16 @@ import ni.edu.uca.blooming.databinding.FragmentPrivacyBinding
 
 class PrivacyFragment : Fragment() {
 
-    private var _binding: FragmentPrivacyBinding? = null
+    private lateinit var binding: FragmentPrivacyBinding
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentPrivacyBinding.inflate(inflater, container, false)
-        return  binding.root
+        binding = FragmentPrivacyBinding.inflate(layoutInflater)
+        return binding.root
 
-    }
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 }

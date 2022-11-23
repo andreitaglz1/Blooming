@@ -9,11 +9,7 @@ import ni.edu.uca.blooming.databinding.FragmentUsabilityBinding
 
 class UsabilityFragment : Fragment() {
 
-    private var _binding: FragmentUsabilityBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
+    private lateinit var  binding: FragmentUsabilityBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -21,14 +17,11 @@ class UsabilityFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        _binding = FragmentUsabilityBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        binding = FragmentUsabilityBinding.inflate(layoutInflater)
 
-        return root
+        return binding.root
+
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
+
 }

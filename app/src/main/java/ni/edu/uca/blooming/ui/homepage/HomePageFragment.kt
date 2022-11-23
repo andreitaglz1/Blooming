@@ -11,26 +11,17 @@ class HomePageFragment : Fragment() {
 
     class HelpFragment : Fragment() {
 
-        private var _binding: FragmentHomePageBinding? = null
-
-        // This property is only valid between onCreateView and
-        // onDestroyView.
-        private val binding get() = _binding!!
+        private lateinit var binding: FragmentHomePageBinding
 
         override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
         ): View {
-            _binding = FragmentHomePageBinding.inflate(inflater, container, false)
-            val root: View = binding.root
+            binding = FragmentHomePageBinding.inflate(layoutInflater)
+            return  binding.root
 
-            return root
         }
 
-        override fun onDestroyView() {
-            super.onDestroyView()
-            _binding = null
-        }
     }
 }

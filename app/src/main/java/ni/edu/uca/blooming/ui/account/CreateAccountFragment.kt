@@ -10,25 +10,17 @@ import ni.edu.uca.blooming.databinding.FragmentCreateAccountBinding
 
 class CreateAccountFragment : Fragment() {
 
-    private var _binding: FragmentCreateAccountBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
+    private lateinit var binding: FragmentCreateAccountBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentCreateAccountBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        binding = FragmentCreateAccountBinding.inflate(layoutInflater)
 
-        return  root
+        return  binding.root
+
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
 }

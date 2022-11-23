@@ -9,11 +9,7 @@ import ni.edu.uca.blooming.databinding.FragmentTerminosBinding
 
 
 class TerminosFragment : Fragment() {
-    private var _binding: FragmentTerminosBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
+    private lateinit var binding: FragmentTerminosBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -21,14 +17,10 @@ class TerminosFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        _binding = FragmentTerminosBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        binding = FragmentTerminosBinding.inflate(layoutInflater)
 
-        return root
+        return binding.root
+
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
 }

@@ -9,25 +9,17 @@ import ni.edu.uca.blooming.databinding.FragmentHelpBinding
 
 class HelpFragment : Fragment() {
 
-    private var _binding: FragmentHelpBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
+    private lateinit var binding: FragmentHelpBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentHelpBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        binding = FragmentHelpBinding.inflate(layoutInflater)
 
-        return  root
+        return  binding.root
+
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
 }
