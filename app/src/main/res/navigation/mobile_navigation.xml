@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_terminos" />
     <fragment
         android:id="@+id/loginFragment"
-        android:name="ni.edu.uca.blooming.LoginFragment"
+        android:name="ni.edu.uca.blooming.ui.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
     <fragment
@@ -32,7 +32,7 @@
         tools:layout="@layout/fragment_usability" />
     <fragment
         android:id="@+id/homePageFragment"
-        android:name="ni.edu.uca.blooming.HomePageFragment"
+        android:name="ni.edu.uca.blooming.ui.homepage.HomePageFragment"
         android:label="fragment_home_page"
         tools:layout="@layout/fragment_home_page" />
 </navigation>

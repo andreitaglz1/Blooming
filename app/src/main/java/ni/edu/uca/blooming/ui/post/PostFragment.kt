@@ -1,16 +1,17 @@
-package ni.edu.uca.blooming
+package ni.edu.uca.blooming.ui.post
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import ni.edu.uca.blooming.databinding.FragmentLoginBinding
+import ni.edu.uca.blooming.R
+import ni.edu.uca.blooming.databinding.FragmentHelpBinding
+import ni.edu.uca.blooming.databinding.FragmentPostBinding
 
+class PostFragment : Fragment() {
 
-class LoginFragment : Fragment() {
-
-    private var _binding: FragmentLoginBinding? = null
+    private var _binding: FragmentPostBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -21,7 +22,7 @@ class LoginFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentLoginBinding.inflate(inflater, container, false)
+        _binding = FragmentPostBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         return  root

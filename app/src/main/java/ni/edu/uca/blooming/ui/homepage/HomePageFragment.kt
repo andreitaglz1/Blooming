@@ -1,4 +1,4 @@
-package ni.edu.uca.blooming
+package ni.edu.uca.blooming.ui.homepage
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
