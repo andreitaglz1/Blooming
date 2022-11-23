@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Blooming</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Blooming</string>
+    <string name="nav_header_subtitle">Abre tus sentimientos y florece</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="usability">¿Cómo se usa?</string>
+    <string name="help">Encuentra Ayuda</string>
+    <string name="terminos_y_condiciones">Términos y Condiciones</string>
+    <string name="aviso_de_privacidad">Aviso de Privacidad</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="info">No debe revelar información personal. Por favor registrarse con un nickname</string>
+    <string name="publicar">Publicar</string>
+    <string name="publicar_un_bloom">Publicar un Bloom</string>
+    <string name="avisodeprivacidad">Este aviso de privacidad explica la manera en que nosotros recibimos, utilizamos y compartimos su información personal al utilzar nuestra aplicación o cuando interactúa de cualquier manera con nosotros</string>
+    <string name="terminosycondiciones">Se ofrece el uso de la aplicación movil Blooming. El uso que haga de los servicios se considerará con su consentimiento expreso en estos términos y condiciones y su reconocimiento de que ha leido y aceptado de manera expresa nuestro aviso de privacidad.</string>
+    <string name="como_funciona">¿Cómo funciona?</string>
+    <string name="usabilidad">Callar o reprimir emociones y/o sentimientos intensos nos provocará daño psicológico y físico, porque no solo nos sentimos angustiados sino que somos más susceptibles a manifestar úlceras y/o enfermedades cardiovasculares. Desahogarnos, hablar o expresar lo que sentimos, compartir nuestros pesares, nos ayuda a liberarnos de aquella energía negativa que venimos arrastrando sobre los hombros.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

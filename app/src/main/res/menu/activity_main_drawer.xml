@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/navUsability"
+            android:title="@string/usability"
+            android:icon="@drawable/usability_icon"/>
+
+        <item android:id="@+id/navHelp"
+            android:title="@string/help"
+            android:icon="@drawable/help_icon"/>
+
+        <item android:id="@+id/navPrivacy"
+            android:title="@string/aviso_de_privacidad"
+            android:icon="@drawable/privacy_icon"/>
+
+        <item android:id="@+id/navTerminos"
+            android:title="@string/terminos_y_condiciones"
+            android:icon="@drawable/term_y_condiciones_icon"/>
+
+    </group>
+</menu>

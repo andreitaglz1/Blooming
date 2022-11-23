@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/terminosFragment"
+        android:name="ni.edu.uca.blooming.ui.terminos.TerminosFragment"
+        android:label="fragment_terminos"
+        tools:layout="@layout/fragment_terminos" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ni.edu.uca.blooming.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="ni.edu.uca.blooming.ui.help.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="ni.edu.uca.blooming.ui.privacy.PrivacyFragment"
+        android:label="fragment_privacy"
+        tools:layout="@layout/fragment_privacy" />
+    <fragment
+        android:id="@+id/usabilityFragment"
+        android:name="ni.edu.uca.blooming.ui.usability.UsabilityFragment"
+        android:label="fragment_usability"
+        tools:layout="@layout/fragment_usability" />
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="ni.edu.uca.blooming.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" />
+</navigation>
