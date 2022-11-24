@@ -5,11 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import ni.edu.uca.blooming.databinding.FragmentHomePageBinding
 
 class HomePageFragment : Fragment() {
-
-    class HelpFragment : Fragment() {
 
         private lateinit var binding: FragmentHomePageBinding
 
@@ -21,7 +20,8 @@ class HomePageFragment : Fragment() {
             binding = FragmentHomePageBinding.inflate(layoutInflater)
             return  binding.root
 
+
+
         }
 
     }
-}

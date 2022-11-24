@@ -35,7 +35,7 @@ class LoginFragment : Fragment() {
                 val userTemp = binding.etNombre.text.toString()
                 val passwTemp:String = binding.etPassword.text.toString()
 
-                if (userTemp == user && passwTemp==password){
+                if (userTemp == "Baam" && passwTemp=="1234."){
                     Navigation.findNavController(binding.root).navigate(R.id.homePageFragment)
                 }else{
                     Toast.makeText(this.context, "Los datos que ingresó son incorrectos, Intent nuevamente!", Toast.LENGTH_SHORT).show()
