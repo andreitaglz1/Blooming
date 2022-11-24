@@ -18,6 +18,9 @@
         <action
             android:id="@+id/login_to_home"
             app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
     </fragment>
     <fragment
         android:id="@+id/helpFragment"
@@ -50,8 +53,12 @@
         android:label="fragment_info_account"
         tools:layout="@layout/fragment_info_account" />
     <fragment
-        android:id="@+id/createAccountFragment2"
+        android:id="@+id/createAccountFragment"
         android:name="ni.edu.uca.blooming.ui.account.CreateAccountFragment"
         android:label="fragment_create_account"
-        tools:layout="@layout/fragment_create_account" />
+        tools:layout="@layout/fragment_create_account" >
+        <action
+            android:id="@+id/action_createAccountFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>
