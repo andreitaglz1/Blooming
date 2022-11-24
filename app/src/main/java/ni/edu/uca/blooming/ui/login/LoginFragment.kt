@@ -7,13 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import ni.edu.uca.blooming.R
 import ni.edu.uca.blooming.databinding.FragmentLoginBinding
 
 
 class LoginFragment : Fragment() {
-    val user:String = "Baam"
-    val password:String ="1234."
+    val user: String = "Baam"
+    val password: String = "1234."
 
     private lateinit var binding: FragmentLoginBinding
 
@@ -24,26 +25,41 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentLoginBinding.inflate(layoutInflater)
+        caAccess()
         Ingresar()
 
-        return  binding.root
+
+        return binding.root
+
     }
 
-    private fun  Ingresar(){
-        try{
-            binding.btnLogin.setOnClickListener {
-                val userTemp = binding.etNombre.text.toString()
-                val passwTemp:String = binding.etPassword.text.toString()
-
-                if (userTemp == "Baam" && passwTemp=="1234."){
-                    Navigation.findNavController(binding.root).navigate(R.id.homePageFragment)
-                }else{
-                    Toast.makeText(this.context, "Los datos que ingresó son incorrectos, Intent nuevamente!", Toast.LENGTH_SHORT).show()
-                }
-            }
-
-        }catch (ex:Exception){
+    private fun caAccess() {
+        binding.tvCreateAc.setOnClickListener {
+            Navigation.findNavController(binding.root).navigate(R.id.createAccountFragment)
 
         }
     }
+
+    private fun Ingresar() {
+        try {
+            binding.btnLogin.setOnClickListener {
+                val userTemp = binding.etNombre.text.toString()
+                val passwTemp: String = binding.etPassword.text.toString()
+
+                if (userTemp == "Baam" && passwTemp == "1234.") {
+                    Navigation.findNavController(binding.root).navigate(R.id.homePageFragment)
+                } else {
+                    Toast.makeText(
+                        this.context,
+                        "Los datos que ingresó son incorrectos, Intent nuevamente!",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }
+
+        } catch (ex: Exception) {
+
+        }
+    }
+
 }
