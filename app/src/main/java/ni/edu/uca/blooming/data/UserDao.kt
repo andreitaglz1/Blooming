@@ -1,4 +1,4 @@
-package ni.edu.uca.blooming.ui.data
+package ni.edu.uca.blooming.data
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao

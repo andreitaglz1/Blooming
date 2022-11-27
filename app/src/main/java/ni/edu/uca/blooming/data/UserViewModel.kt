@@ -1,4 +1,4 @@
-package ni.edu.uca.blooming.ui.data
+package ni.edu.uca.blooming.data
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
@@ -13,7 +13,7 @@ class UserViewModel(application: Application): AndroidViewModel(application) {
     private val repository: UserRepository
 
     init{
-        val userDao = UserDatabase.getDatabase(application) .userDao()
+        val userDao = UserDatabase.getDatabase(application).userDao()
         repository = UserRepository(userDao)
         readAllData = repository.readAllData
     }

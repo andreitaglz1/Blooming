@@ -1,4 +1,4 @@
-package ni.edu.uca.blooming.ui.data
+package ni.edu.uca.blooming.data
 
 import android.content.Context
 import androidx.room.Database
@@ -15,7 +15,7 @@ abstract class BloomDatabase : RoomDatabase() {
         @Volatile
         private var INSTANCE : BloomDatabase? = null
 
-        fun getDatabase(context: Context) : BloomDatabase{
+        fun getDatabase(context: Context) : BloomDatabase {
 
             return INSTANCE ?: synchronized(this){
                 val instance = Room.databaseBuilder(

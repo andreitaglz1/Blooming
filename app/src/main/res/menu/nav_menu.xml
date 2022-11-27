@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
-
-        <item android:id="@+id/navUsability"
+        <item android:id="@+id/nav_Usability"
+            android:menuCategory="system"
             android:title="@string/usability"
             android:icon="@drawable/usability_icon"/>
 
-        <item android:id="@+id/navHelp"
+        <item android:id="@+id/nav_Help"
+            android:menuCategory="system"
             android:title="@string/help"
             android:icon="@drawable/help_icon"/>
 
-        <item android:id="@+id/navPrivacy"
+        <item android:id="@+id/nav_Privacy"
+            android:menuCategory="system"
             android:title="@string/aviso_de_privacidad"
             android:icon="@drawable/privacy_icon"/>
 
-        <item android:id="@+id/navTerminos"
+        <item android:id="@+id/nav_Terminos"
+            android:menuCategory="system"
             android:title="@string/terminos_y_condiciones"
             android:icon="@drawable/term_y_condiciones_icon"/>
-
-    </group>
-</menu>
+    </menu>

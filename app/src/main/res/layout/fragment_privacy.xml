@@ -38,42 +38,5 @@
         app:layout_constraintTop_toBottomOf="@+id/tvTitle"
         />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@drawable/gradient_pink"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-        <Button
-            android:id="@+id/btnBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            app:icon="@drawable/back_icon"
-            app:iconGravity="textEnd" />
-
-        <Button
-            android:id="@+id/btnHome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            app:icon="@drawable/hogar"
-            app:iconGravity="textEnd" />
-
-        <Button
-            android:id="@+id/btnUser"
-            android:layout_width="wrap_content"
-            android:background="@android:color/transparent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:icon="@drawable/user"
-            app:iconGravity="textEnd" />
-
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

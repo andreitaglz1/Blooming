@@ -10,7 +10,7 @@
         android:id="@+id/imageView"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="72dp"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -19,7 +19,7 @@
 
     <TextView
         android:id="@+id/tvUser"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="40dp"
@@ -32,6 +32,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+
     <EditText
         android:id="@+id/etNombre"
         android:layout_width="wrap_content"
@@ -39,7 +40,9 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="30dp"
         android:ems="10"
+        android:hint="NickName"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@id/tvUser"
@@ -54,39 +57,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvUser" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@drawable/gradient_pink"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-        <Button
-            android:id="@+id/btnBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            app:icon="@drawable/back_icon"
-            app:iconGravity="textEnd" />
-        <Button
-            android:id="@+id/btnHome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:layout_weight="1"
-            app:icon="@drawable/hogar"
-            app:iconGravity="textEnd" />
-        <Button
-            android:id="@+id/btnUser"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:layout_weight="1"
-            app:icon="@drawable/user"
-            app:iconGravity="textEnd" />
-
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
