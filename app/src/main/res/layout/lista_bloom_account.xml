@@ -14,7 +14,7 @@
         android:layout_height="110dp">
 
         <TextView
-            android:id="@+id/tv"
+            android:id="@+id/tvBloom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -27,14 +27,9 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/etbloom"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp" />
 
         <ImageButton
+            android:id="@+id/btnDelete"
             android:layout_width="59dp"
             android:layout_height="52dp"
             android:layout_alignParentTop="true"
@@ -47,6 +42,7 @@
             android:src="@drawable/delete_icon" />
 
         <ImageButton
+            android:id="@+id/btnEdit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"

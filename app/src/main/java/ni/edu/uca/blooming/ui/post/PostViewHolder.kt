@@ -1,4 +1,4 @@
-package ni.edu.uca.blooming.ui.data
+package ni.edu.uca.blooming.ui.post
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

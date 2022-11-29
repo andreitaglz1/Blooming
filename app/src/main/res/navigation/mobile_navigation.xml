@@ -21,6 +21,9 @@
         <action
             android:id="@+id/action_loginFragment_to_createAccountFragment"
             app:destination="@id/createAccountFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeAlterno"
+            app:destination="@id/homeAlterno" />
     </fragment>
     <fragment
         android:id="@+id/helpFragment"
@@ -41,12 +44,20 @@
         android:id="@+id/homePageFragment"
         android:name="ni.edu.uca.blooming.ui.homepage.HomePageFragment"
         android:label="fragment_home_page"
-        tools:layout="@layout/fragment_home_page" />
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePageFragment_to_postFragment"
+            app:destination="@id/postFragment" />
+    </fragment>
     <fragment
         android:id="@+id/postFragment"
         android:name="ni.edu.uca.blooming.ui.post.PostFragment"
         android:label="fragment_post"
-        tools:layout="@layout/fragment_post" />
+        tools:layout="@layout/fragment_post" >
+        <action
+            android:id="@+id/action_postFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
     <fragment
         android:id="@+id/infoAccountFragment"
         android:name="ni.edu.uca.blooming.ui.account.InfoAccountFragment"
@@ -59,6 +70,15 @@
         tools:layout="@layout/fragment_create_account" >
         <action
             android:id="@+id/action_createAccountFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeAlterno"
+        android:name="ni.edu.uca.blooming.ui.homepage.HomeAlterno"
+        android:label="fragment_home_alterno"
+        tools:layout="@layout/fragment_home_alterno" >
+        <action
+            android:id="@+id/action_homeAlterno_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
 </navigation>
