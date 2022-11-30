@@ -3,7 +3,6 @@ package ni.edu.uca.blooming.ui.post
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import ni.edu.uca.blooming.Posts
 import ni.edu.uca.blooming.R
 
 class PostAdapter(private val listaPosts: List<Posts>): RecyclerView.Adapter<PostViewHolder>()  {

@@ -47,7 +47,7 @@ class LoginFragment : Fragment() {
                 val passwTemp: String = binding.etPassword.text.toString()
 
                 if (userTemp == "Baam" && passwTemp == "1234.") {
-                    Navigation.findNavController(binding.root).navigate(R.id.homePageFragment)
+                    Navigation.findNavController(binding.root).navigate(R.id.homeFragment)
                 } else {
                     Toast.makeText(
                         this.context,

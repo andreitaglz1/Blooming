@@ -1,4 +1,4 @@
-package ni.edu.uca.blooming
+package ni.edu.uca.blooming.ui.post
 
 class ListaPost {
     companion object {

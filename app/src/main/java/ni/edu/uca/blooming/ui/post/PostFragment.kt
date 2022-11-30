@@ -20,7 +20,7 @@ class PostFragment : Fragment() {
     ): View {
         binding = FragmentPostBinding.inflate(layoutInflater)
         binding.btnPubBloom.setOnClickListener(){
-            findNavController().navigate(R.id.homePageFragment)
+            findNavController().navigate(R.id.homeFragment)
 
         }
 
