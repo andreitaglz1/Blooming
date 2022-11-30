@@ -8,7 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-
+    <color name="mabel">#FAC0D8</color>
+    <color name="blanca">#F993BD</color>
     <color name="light_red">#FF4A76</color>
     <color name="jazzberry_jam">#DD618E</color>
     <color name="title">#C13769</color>
