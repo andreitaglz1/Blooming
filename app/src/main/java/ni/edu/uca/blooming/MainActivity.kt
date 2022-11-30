@@ -1,5 +1,6 @@
 package ni.edu.uca.blooming
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
@@ -8,6 +9,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import ni.edu.uca.blooming.databinding.ActivityMainBinding
+import ni.edu.uca.blooming.ui.help.HelpFragment
+import ni.edu.uca.blooming.ui.privacy.PrivacyFragment
+import ni.edu.uca.blooming.ui.terminos.TerminosFragment
+import ni.edu.uca.blooming.ui.usability.UsabilityFragment
 
 class MainActivity  : AppCompatActivity(){
     private lateinit var binding: ActivityMainBinding
@@ -20,30 +25,16 @@ class MainActivity  : AppCompatActivity(){
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-            navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main)
+        //navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main)
 
-            //for nav drawer
-            toggle = ActionBarDrawerToggle(this, binding.root, R.string.open, R.string.close)
-            binding.root.addDrawerListener(toggle)
-            toggle.syncState()
-            supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        //for nav drawer
+        toggle = ActionBarDrawerToggle(this, binding.root, R.string.open, R.string.close)
+        binding.root.addDrawerListener(toggle)
+        toggle.syncState()
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+    }
 
-            //bottom navigation
-           /* binding.bottomNav.setOnItemSelectedListener { it ->
-                when (it.itemId) {
-                    R.id.btnInicio -> {
-                        navController.navigate(R.id.)
-                    }
-                    R.id.btnUsuario -> {
-                        navController.navigate(R.id.infoAccountFragment)
-                    }
-                }
-                true
-
-            } */
-
-        }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 

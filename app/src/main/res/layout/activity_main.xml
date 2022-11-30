@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:openDrawer="">
+    tools:openDrawer="start">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment_content_main"
@@ -34,19 +34,5 @@
         android:background="@color/jazzberry_jam"
         app:headerLayout="@layout/nav_header_main"
         app:menu="@menu/nav_menu" />
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="bottom">
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:id="@+id/bottom_nav"
-        android:layout_height="60dp"
-        app:itemTextColor="@color/white"
-        app:itemIconTint="@color/white"
-        android:background="@drawable/gradient_pink"
-        app:menu="@menu/bottom_nav"/>
-</RelativeLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>

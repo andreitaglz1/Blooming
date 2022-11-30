@@ -1,18 +1,15 @@
 package ni.edu.uca.blooming.ui.data
 
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import ni.edu.uca.blooming.Posts
+import ni.edu.uca.blooming.ui.post.Posts
 import ni.edu.uca.blooming.R
-import ni.edu.uca.blooming.ui.post.PostViewHolder
 
 class BloomAdapter(private val itemClickListener: OnItemClickListener) : ListAdapter<Posts, BloomAdapter.BloomViewHolder> (DiffCallback()){
 

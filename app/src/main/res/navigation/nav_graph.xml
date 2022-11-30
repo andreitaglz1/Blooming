@@ -16,14 +16,14 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/login_to_home"
-            app:destination="@id/homePageFragment" />
-        <action
             android:id="@+id/action_loginFragment_to_createAccountFragment"
             app:destination="@id/createAccountFragment" />
         <action
             android:id="@+id/action_loginFragment_to_homeAlterno"
             app:destination="@id/homeAlterno" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/helpFragment"
@@ -41,37 +41,13 @@
         android:label="fragment_usability"
         tools:layout="@layout/fragment_usability" />
     <fragment
-        android:id="@+id/homePageFragment"
-        android:name="ni.edu.uca.blooming.ui.homepage.HomePageFragment"
-        android:label="fragment_home_page"
-        tools:layout="@layout/fragment_home_page" >
-        <action
-            android:id="@+id/action_homePageFragment_to_postFragment"
-            app:destination="@id/postFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/postFragment"
-        android:name="ni.edu.uca.blooming.ui.post.PostFragment"
-        android:label="fragment_post"
-        tools:layout="@layout/fragment_post" >
-        <action
-            android:id="@+id/action_postFragment_to_homePageFragment"
-            app:destination="@id/homePageFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/infoAccountFragment"
-        android:name="ni.edu.uca.blooming.ui.account.InfoAccountFragment"
         android:label="fragment_info_account"
         tools:layout="@layout/fragment_info_account" />
     <fragment
         android:id="@+id/createAccountFragment"
-        android:name="ni.edu.uca.blooming.ui.account.CreateAccountFragment"
         android:label="fragment_create_account"
-        tools:layout="@layout/fragment_create_account" >
-        <action
-            android:id="@+id/action_createAccountFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_create_account" />
     <fragment
         android:id="@+id/homeAlterno"
         android:name="ni.edu.uca.blooming.ui.homepage.HomeAlterno"
@@ -80,5 +56,23 @@
         <action
             android:id="@+id/action_homeAlterno_to_loginFragment"
             app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ni.edu.uca.blooming.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_usabilityFragment"
+            app:destination="@id/usabilityFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_privacyFragment"
+            app:destination="@id/privacyFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_terminosFragment"
+            app:destination="@id/terminosFragment" />
     </fragment>
 </navigation>
