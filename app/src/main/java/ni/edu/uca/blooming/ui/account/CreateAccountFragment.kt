@@ -11,8 +11,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import ni.edu.uca.blooming.R
 import ni.edu.uca.blooming.databinding.FragmentCreateAccountBinding
-import ni.edu.uca.blooming.ui.data.UserViewModel
-import ni.edu.uca.blooming.ui.data.User
+import ni.edu.uca.blooming.data.UserViewModel
+import ni.edu.uca.blooming.data.User
 
 
 class CreateAccountFragment : Fragment() {
@@ -47,7 +47,6 @@ class CreateAccountFragment : Fragment() {
             mUserViewModel.registrarUser(user)
             Toast.makeText(requireContext(), "Usuario añadido exitosamente", Toast.LENGTH_LONG).show()
             //Navegar de regreso
-            findNavController().navigate(R.id.loginFragment)
         }else{
             Toast.makeText(requireContext(), "No puede dejar los campos en blanco", Toast.LENGTH_LONG).show()
         }

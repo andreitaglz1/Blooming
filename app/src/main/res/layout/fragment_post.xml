@@ -41,54 +41,17 @@
         android:id="@+id/btnPubBloom"
         android:layout_width="230dp"
         android:layout_height="50dp"
+        android:layout_marginTop="292dp"
         android:background="@drawable/custom_button"
         android:backgroundTint="@color/jazzberry_jam"
         android:text="Publicar Bloom"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.602"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
         app:layout_constraintVertical_bias="0.904" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/gradient_pink"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-        <Button
-            android:id="@+id/btnBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            app:icon="@drawable/back_icon"
-            app:iconGravity="textEnd" />
-
-        <Button
-            android:id="@+id/btnHome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            app:icon="@drawable/hogar"
-            app:iconGravity="textEnd" />
-
-        <Button
-            android:id="@+id/btnUser"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            app:icon="@drawable/user"
-            app:iconGravity="textEnd" />
-
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
