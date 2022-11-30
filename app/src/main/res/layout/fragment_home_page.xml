@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:openDrawer=""
-    tools:context=".ui.homepage.HomePageFragment">
+    tools:context=".ui.home.HomeFragment">
 
 
     <LinearLayout
@@ -29,15 +29,14 @@
                 android:background="@drawable/custom_input"
                 android:padding="20dp"
                 />
+
             <Button
                 android:id="@+id/btnPost"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
                 android:layout_gravity="center"
                 android:background="@drawable/custom_button"
-                android:text="Guardar" />
+                android:text="@string/guardar" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/blooms"
@@ -79,7 +78,7 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="@drawable/hogar" />
+                android:background="@drawable/home" />
 
             <ImageButton
                 android:id="@+id/btnLogin"
@@ -110,7 +109,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:menu="@menu/activity_main_drawer" />
+            app:menu="@menu/nav_menu" />
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
