@@ -30,10 +30,10 @@ class MainActivity  : AppCompatActivity(){
 
 
             //bottom navigation
-            binding.bottomNav.setOnItemSelectedListener { it ->
+           /* binding.bottomNav.setOnItemSelectedListener { it ->
                 when (it.itemId) {
                     R.id.btnInicio -> {
-                        navController.navigate(R.id.homeFragment)
+                        navController.navigate(R.id.)
                     }
                     R.id.btnUsuario -> {
                         navController.navigate(R.id.infoAccountFragment)
@@ -41,7 +41,7 @@ class MainActivity  : AppCompatActivity(){
                 }
                 true
 
-            }
+            } */
 
         }
 
