@@ -1,32 +1,21 @@
 package ni.edu.uca.blooming.ui.home
 
-import android.content.Intent
+
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.android.material.navigation.NavigationView
 import ni.edu.uca.blooming.ui.post.Posts
-import ni.edu.uca.blooming.R
 import ni.edu.uca.blooming.databinding.FragmentHomeBinding
 import ni.edu.uca.blooming.ui.data.BloomAdapter
-import android.widget.AdapterView.OnItemSelectedListener
+
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
-import androidx.navigation.fragment.findNavController
-import com.google.android.material.bottomnavigation.BottomNavigationView
-import ni.edu.uca.blooming.ui.help.HelpFragment
-import ni.edu.uca.blooming.ui.privacy.PrivacyFragment
-import ni.edu.uca.blooming.ui.terminos.TerminosFragment
-import ni.edu.uca.blooming.ui.usability.UsabilityFragment
 
 
-class HomeFragment : Fragment(), BloomAdapter.OnItemClickListener {
+class  HomeFragment : Fragment(), BloomAdapter.OnItemClickListener {
     private lateinit var binding: FragmentHomeBinding
     lateinit var toggle: ActionBarDrawerToggle
     private lateinit var navController: NavController
@@ -68,10 +57,6 @@ class HomeFragment : Fragment(), BloomAdapter.OnItemClickListener {
             }
 
 
-            //navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main)
-
-
-
         }
 
         return binding.root
@@ -91,4 +76,3 @@ class HomeFragment : Fragment(), BloomAdapter.OnItemClickListener {
 
 
 }
-
