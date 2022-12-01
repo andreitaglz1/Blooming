@@ -8,11 +8,10 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
-import ni.edu.uca.blooming.ListaPost
 import ni.edu.uca.blooming.R
 import ni.edu.uca.blooming.databinding.FragmentHomeAlternoBinding
-import ni.edu.uca.blooming.databinding.FragmentHomePageBinding
-import ni.edu.uca.blooming.ui.data.BloomAdapter
+
+import ni.edu.uca.blooming.ui.post.ListaPost
 import ni.edu.uca.blooming.ui.post.PostAdapter
 
 class HomeAlterno : Fragment() {

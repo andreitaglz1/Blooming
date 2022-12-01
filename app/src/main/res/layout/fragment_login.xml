@@ -11,10 +11,10 @@
         android:id="@+id/imageView"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_gravity="center"
         android:layout_marginTop="100dp"
         android:layout_marginBottom="50dp"
         android:src="@drawable/logo"
-        android:layout_gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                />
+                tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
 
         <LinearLayout
@@ -85,42 +85,11 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etPassword"
             />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginVertical="70dp">
 
-            <TextView
-                android:id="@+id/tvO"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="| o | "
-                android:textAlignment="center"
-                android:textColor="@color/jazzberry_jam"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnLogin"/>
-
-            <TextView
-                android:id="@+id/tvCreateAc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" | Crear una cuenta | "
-                android:textAlignment="center"
-                android:textColor="@color/jazzberry_jam"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvO"/>
 
             <TextView
                 android:id="@+id/tvSinCuenta"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Iniciar sesion sin cuenta"
@@ -128,8 +97,6 @@
                 android:textColor="@color/jazzberry_jam"
                 android:textSize="20sp"
                 />
-
-    </LinearLayout>
 
 
 

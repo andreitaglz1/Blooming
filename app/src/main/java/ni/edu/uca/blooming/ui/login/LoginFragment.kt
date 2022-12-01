@@ -25,19 +25,11 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentLoginBinding.inflate(layoutInflater)
-        caAccess()
         Ingresar()
 
 
         return binding.root
 
-    }
-
-    private fun caAccess() {
-        binding.tvCreateAc.setOnClickListener {
-            Navigation.findNavController(binding.root).navigate(R.id.createAccountFragment)
-
-        }
     }
 
     private fun Ingresar() {

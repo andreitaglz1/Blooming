@@ -58,44 +58,6 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="bottom">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:orientation="horizontal"
-            android:background="@drawable/gradient_pink"
-            android:layout_gravity="bottom"
-            android:gravity="center">
-
-            <ImageButton
-                android:id="@+id/btnHome"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/home" />
-
-            <ImageButton
-                android:id="@+id/btnLogin"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/user"
-                android:layout_gravity="center"
-                android:layout_marginStart="70dp"
-                android:layout_marginEnd="10dp"
-                />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-
-
         <com.google.android.material.navigation.NavigationView
             android:id="@+id/nav_view"
             android:layout_width="wrap_content"
